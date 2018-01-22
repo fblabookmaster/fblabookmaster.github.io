@@ -3,130 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-* {box-sizing: border-box;}
-
-    .topnav{
-        overflow: hidden;
-  background-color: #e9e9e9;
-        
-    }
-    /*SUNNY PUT THE BACKGROUND IMAGE IN BODY BELOW*/
-body {    
-        background-image: url(images/bg.jpg);
-
-  margin: 0;
-  font-family: Arial;
-    "bg.jpg"
-    
-}
-    script{
-        font-size:17px;
-    }
-    .clickboy{
-        
-        float:left;
-        margin-left:80%;
-    }
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav .search-container {
-  float: left;
-}
-
-.topnav input[type=text] {
-  padding: 20px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: left;
-  padding: 6px 10px;
-  
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: left;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: left;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-</style>
 </head>
-    
 <body>
-    <center>
-        <h1 style="color:aliceblue;">Library Catalog</h1>
-        
-        <h2 style="color:aliceblue;">Search for the Books You Want</h2>
-
-        
-     <div class="topnav">   
-    
-         <div class="search-container">
-              
-                  
-    <input type="text" placeholder="Search.." name="search" id="input" >
-                     <br/> <button class="clickboy" onclick="parse();" ><i class="fa fa-search"></i></button><br/>
-                  
-             <textarea id="output" type="text" name="search" rows="10" cols="63" placeholder="Click search..."></textarea>
-               <button type="button" onclick="alert('Reservation Successful!')">Reserve</button>
-  </div>
-</div>
-    
-   
-   
+    <h1>Make sure we have the book you want! Search below.</h1>
+    <h2>Enter the book, or list of books you want</h2>
+    <label for="input">Search Field:</label><br/>
+    <textarea id="input" style="height: 80%" rows="20" cols="120"></textarea>
+    <br/><button onclick="parse();">Search</button><br/>
+    <label for="output">What We Have:</label><br/>
+    <textarea id="output" rows="20" cols="120" placeholder="Click search..."></textarea>
     <p></p>
-  
-    </center>    
-    
-
-  
-  
-   
-      
-  
-  
+    <button type="button" onclick="alert('Reservation Successful!')">Reserve</button>
 
 </body>
 </html>
